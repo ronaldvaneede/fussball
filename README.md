@@ -4,24 +4,29 @@
 Being the nerds that we are, it was time to have a digital scoreboard to accompany our physical [table football](http://en.wikipedia.org/wiki/Table_football).
 
 ##Requirements
+
 ###Overall prerequisites
-####Logistics
+
+#### Logistics
 - Foosball table
 - 4 players
 - 2 teams
 - 1..4 mobile devices
 - 2 player positions per team (attacking & defending)
-####Envisioned architecture
+ 
+#### Envisioned architecture
 - 1 Gamelist (a.k.a. server)
 - 0..* Lobbies (a.k.a. channels)
 - 0..* Matches (a.k.a. "Lobby" being played)
+
 ###Version 1.0 "Base API with consonle output to mimic app":
-####Prerequisites/Scope
+
+#### Prerequisites/Scope
 - Static list of players i.e. no login feature
 - Make it work for 2 mobile devices first (no syncing yet)
 - Ruleset: first team to 11 goals. Should win with a margin of +2 goals. (i.e. 12 - 14 could be a valid score)
 
-####Requirements
+#### Requirements
 - There should be a Gamelist where matches are shown. Perhaps with an option to only show available matches
 - If you're in the Gamelist, you should be able to create a Lobby. You will become the Host.
 - If you're in the Gamelist and you see an available Lobby, you can join this Lobby.
